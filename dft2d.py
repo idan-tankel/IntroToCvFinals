@@ -56,7 +56,7 @@ def ifftshift(X):
     real, imag = X.chunk(chunks=2, dim=-1)
     real, imag = real.squeeze(dim=-1), imag.squeeze(dim=-1)
 
-    for dim in range((len(real.size()) — 1), 1, -1):
+    for dim in range((len(real.size()) — 1), 1, -1)):
         real = roll_n(real, axis=dim,
                       n=int(np.floor(real.size(dim) / 2)))
         imag = roll_n(imag, axis=dim,
