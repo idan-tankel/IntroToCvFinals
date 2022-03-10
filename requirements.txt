@@ -1,0 +1,3 @@
+pytorch_lightning
+torch
+torch_geometric
