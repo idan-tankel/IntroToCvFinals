@@ -30,3 +30,21 @@ def create_the_matrix(src_points: np.array, dst_points: np.array) -> np.array:
         multiplication = (src_points[i].reshape(3,1))*dst_points[i]
         A.append(multiplication.reshape(-1)) # trick -1 is reshape to 1d array
     return A
+
+
+def solve_by_svd(A:np.array):
+    """
+    This function gets the matrix A from the `create_the_matrix` function and apply SVD to it
+     in order to find the H params
+
+    Args:
+        A: numpy.array - The matrix to apply SVD to
+    """
+    U, S, V = np.linalg.svd(A)
+    h = V[-1,:] / V[-1,-1] # this is normalization trick - for the last column, V[-1], apply to all the coordinates V[-1,:]....
+    # H is now the vector of solutions
+    h = h.reshape(3,3)
+    h = np.round(h,2)
+    # todo - normalization!
+
+    return h
