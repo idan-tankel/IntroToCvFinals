@@ -132,3 +132,6 @@ dmypy.json
 *.amlignore
 *.amlignore.amltmp
 *.amltmp
+introtovisionalgos.ipynb.amltmp
+introtovisionalgos.ipynb.amltmp
+.ipynb_aml_checkpoints/*

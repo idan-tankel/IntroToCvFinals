@@ -32,14 +32,8 @@
         "# for image processing - cv2,numpy,torch\n",
         "%pip install -U opencv-python numpy"
       ],
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": "Requirement already up-to-date: ipykernel in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (6.9.2)\nRequirement already satisfied, skipping upgrade: nest-asyncio in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipykernel) (1.5.4)\nRequirement already satisfied, skipping upgrade: psutil in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipykernel) (5.9.0)\nRequirement already satisfied, skipping upgrade: tornado<7.0,>=4.2 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipykernel) (6.1)\nRequirement already satisfied, skipping upgrade: jupyter-client<8.0 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipykernel) (6.1.12)\nRequirement already satisfied, skipping upgrade: ipython>=7.23.1 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipykernel) (8.0.1)\nRequirement already satisfied, skipping upgrade: traitlets<6.0,>=5.1.0 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipykernel) (5.1.1)\nRequirement already satisfied, skipping upgrade: debugpy<2.0,>=1.0.0 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipykernel) (1.5.1)\nRequirement already satisfied, skipping upgrade: matplotlib-inline<0.2.0,>=0.1.0 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipykernel) (0.1.3)\nRequirement already satisfied, skipping upgrade: pyzmq>=13 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from jupyter-client<8.0->ipykernel) (22.3.0)\nRequirement already satisfied, skipping upgrade: python-dateutil>=2.1 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from jupyter-client<8.0->ipykernel) (2.8.2)\nRequirement already satisfied, skipping upgrade: jupyter-core>=4.6.0 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from jupyter-client<8.0->ipykernel) (4.9.1)\nRequirement already satisfied, skipping upgrade: decorator in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipython>=7.23.1->ipykernel) (5.1.1)\nRequirement already satisfied, skipping upgrade: pygments in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipython>=7.23.1->ipykernel) (2.11.2)\nRequirement already satisfied, skipping upgrade: black in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipython>=7.23.1->ipykernel) (22.1.0)\nRequirement already satisfied, skipping upgrade: pickleshare in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipython>=7.23.1->ipykernel) (0.7.5)\nRequirement already satisfied, skipping upgrade: pexpect>4.3; sys_platform != \"win32\" in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipython>=7.23.1->ipykernel) (4.8.0)\nRequirement already satisfied, skipping upgrade: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipython>=7.23.1->ipykernel) (3.0.26)\nRequirement already satisfied, skipping upgrade: jedi>=0.16 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipython>=7.23.1->ipykernel) (0.18.0)\nRequirement already satisfied, skipping upgrade: backcall in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipython>=7.23.1->ipykernel) (0.2.0)\nRequirement already satisfied, skipping upgrade: stack-data in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipython>=7.23.1->ipykernel) (0.1.4)\nRequirement already satisfied, skipping upgrade: setuptools>=18.5 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from ipython>=7.23.1->ipykernel) (50.3.0)\nRequirement already satisfied, skipping upgrade: six>=1.5 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from python-dateutil>=2.1->jupyter-client<8.0->ipykernel) (1.16.0)\nRequirement already satisfied, skipping upgrade: typing-extensions>=3.10.0.0; python_version < \"3.10\" in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from black->ipython>=7.23.1->ipykernel) (4.0.1)\nRequirement already satisfied, skipping upgrade: platformdirs>=2 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from black->ipython>=7.23.1->ipykernel) (2.4.1)\nRequirement already satisfied, skipping upgrade: click>=8.0.0 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from black->ipython>=7.23.1->ipykernel) (8.0.3)\nRequirement already satisfied, skipping upgrade: pathspec>=0.9.0 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from black->ipython>=7.23.1->ipykernel) (0.9.0)\nRequirement already satisfied, skipping upgrade: tomli>=1.1.0 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from black->ipython>=7.23.1->ipykernel) (2.0.1)\nRequirement already satisfied, skipping upgrade: mypy-extensions>=0.4.3 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from black->ipython>=7.23.1->ipykernel) (0.4.3)\nRequirement already satisfied, skipping upgrade: ptyprocess>=0.5 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from pexpect>4.3; sys_platform != \"win32\"->ipython>=7.23.1->ipykernel) (0.7.0)\nRequirement already satisfied, skipping upgrade: wcwidth in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.23.1->ipykernel) (0.2.5)\nRequirement already satisfied, skipping upgrade: parso<0.9.0,>=0.8.0 in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from jedi>=0.16->ipython>=7.23.1->ipykernel) (0.8.3)\nRequirement already satisfied, skipping upgrade: asttokens in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from stack-data->ipython>=7.23.1->ipykernel) (2.0.5)\nRequirement already satisfied, skipping upgrade: pure-eval in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from stack-data->ipython>=7.23.1->ipykernel) (0.2.2)\nRequirement already satisfied, skipping upgrade: executing in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (from stack-data->ipython>=7.23.1->ipykernel) (0.8.2)\nNote: you may need to restart the kernel to use updated packages.\nRequirement already up-to-date: opencv-python in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (4.5.5.64)\nRequirement already up-to-date: numpy in /anaconda/envs/azureml_py38/lib/python3.8/site-packages (1.22.3)\nNote: you may need to restart the kernel to use updated packages.\n"
-        }
-      ],
-      "execution_count": 2,
+      "outputs": [],
+      "execution_count": null,
       "metadata": {
         "gather": {
           "logged": 1647374660873
@@ -241,7 +235,7 @@
           }
         }
       ],
-      "execution_count": 1,
+      "execution_count": 3,
       "metadata": {
         "gather": {
           "logged": 1646772199011
@@ -261,7 +255,7 @@
         "import numpy as np\n",
         "\n",
         "img = Image.open(r'new_bnw.jpg')\n",
-        "img = img.convert(mode='L')\n",
+        "img = img.convert(mode=\"L\")\n",
         "img = np.array(img)\n",
         "img = torch.from_numpy(img)\n",
         "print(img.shape)  # (512, 512)\n",
@@ -269,13 +263,13 @@
         "fft_img = torch.fft.fft(img)\n",
         "print(fft_img)  # torch.Size([512, 512])\n",
         "# convert torch to an image\n",
-        "torchvision.transforms.functional.to_pil_image(pic=fft_img,mode='L')\n"
+        "torchvision.transforms.functional.to_pil_image(pic=fft_img,mode=\"L\")\n"
       ],
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
-          "text": "torch.Size([2832, 4256])\ntensor([[153396.0000+0.0000j, -25890.1914-3355.9980j,\n           5932.5947-10229.9375j,  ...,\n         -19528.1523-9555.6582j,   5932.5947+10229.9375j,\n         -25890.1914+3355.9980j],\n        [153994.0000+0.0000j, -25437.0117-4117.2900j,\n           5530.1641-10598.5137j,  ...,\n         -19414.6016-9155.8867j,   5530.1641+10598.5137j,\n         -25437.0117+4117.2900j],\n        [152802.0000+0.0000j, -25206.6328-4314.8047j,\n           4979.6367-9898.8047j,  ...,\n         -19285.7266-9880.0195j,   4979.6367+9898.8047j,\n         -25206.6328+4314.8047j],\n        ...,\n        [ 36369.0000+0.0000j, -13652.7617-1162.3965j,\n           8174.8359+1343.2800j,  ...,\n           4718.9810+1418.7036j,   8174.8359-1343.2800j,\n         -13652.7617+1162.3965j],\n        [ 34409.0000+0.0000j, -12182.8125-1496.2539j,\n           6997.1436+1092.4058j,  ...,\n           5341.0117+1102.9844j,   6997.1436-1092.4058j,\n         -12182.8125+1496.2539j],\n        [ 33543.0000+0.0000j, -11013.3027-1534.9482j,\n           6074.3838+850.0256j,  ...,\n           6133.7139+662.3796j,   6074.3838-850.0256j,\n         -11013.3027+1534.9482j]])\n"
+          "text": "torch.Size([2832, 4256])\ntensor([[153396.0000+0.0000j, -25890.1953-3355.9980j,\n           5932.5947-10229.9375j,  ...,\n         -19528.1523-9555.6582j,   5932.5947+10229.9375j,\n         -25890.1953+3355.9980j],\n        [153994.0000+0.0000j, -25437.0117-4117.2910j,\n           5530.1616-10598.5117j,  ...,\n         -19414.6016-9155.8867j,   5530.1616+10598.5117j,\n         -25437.0117+4117.2910j],\n        [152802.0000+0.0000j, -25206.6328-4314.8037j,\n           4979.6367-9898.8037j,  ...,\n         -19285.7266-9880.0195j,   4979.6367+9898.8037j,\n         -25206.6328+4314.8037j],\n        ...,\n        [ 36369.0000+0.0000j, -13652.7617-1162.3975j,\n           8174.8359+1343.2800j,  ...,\n           4718.9814+1418.7037j,   8174.8359-1343.2800j,\n         -13652.7617+1162.3975j],\n        [ 34409.0000+0.0000j, -12182.8145-1496.2539j,\n           6997.1436+1092.4060j,  ...,\n           5341.0122+1102.9846j,   6997.1436-1092.4060j,\n         -12182.8145+1496.2539j],\n        [ 33543.0000+0.0000j, -11013.3037-1534.9482j,\n           6074.3838+850.0256j,  ...,\n           6133.7139+662.3799j,   6074.3838-850.0256j,\n         -11013.3037+1534.9482j]])\n"
         },
         {
           "output_type": "error",
@@ -290,7 +284,7 @@
           ]
         }
       ],
-      "execution_count": 6,
+      "execution_count": 4,
       "metadata": {
         "gather": {
           "logged": 1646333123842
@@ -710,7 +704,7 @@
       "execution_count": 1,
       "metadata": {
         "gather": {
-          "logged": 1647456621811
+          "logged": 1647536287308
         }
       }
     },
@@ -815,6 +809,16 @@
           "logged": 1647374604679
         }
       }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "creating epipolar line by the following multiplication\n",
+        "$$\n",
+        "\\underline{x_2}^tE\\underline{p}=0\n",
+        "$$"
+      ],
+      "metadata": {}
     },
     {
       "cell_type": "markdown",
